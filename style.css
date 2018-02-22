@@ -67,6 +67,13 @@ ul {
   float:left;
 }
 
+@media screen and (max-width: 992px) {
+  .halfSpace {
+    width: 100%;
+
+  }
+}
+
 .halfSpace .thumbnail {
   margin-bottom: 0px;
 }

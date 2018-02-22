@@ -1,19 +1,27 @@
 
 <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Marek Fewtrell's Awesome Portfolio</title>
+		<meta name="description" content="Marek Fewtrell's Awesome Portfolio Site">
+	  <meta name="author" content="Marek Fewtrell">
 
-<head>
-	<meta charset="UTF-8">
-	<title>Marek Fewtrell Awesome Portfolio</title>
+		<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+		<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
 
-	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
-	<link rel='stylesheet' href="style.css">
+		<link rel='stylesheet' href="style.css">
+		<link rel='stylesheet' href="gridStyle.css">
 
-	<style>
-	</style>
-</head>
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+		<![endif]-->
 
-<body translate="no" >
+		<style>
+		</style>
+	</head>
+
+	<body translate="no" >
 
 		<nav class="mynavbar customBgColor2">
 			<div class="container">
@@ -26,6 +34,7 @@
 				</ul>
 			</div>
 		</nav>
+
 		<div class="container">
 			<div class="row">
 				<div id="about" class="col-xs-12 panel panel-default">
@@ -43,12 +52,6 @@
 							You can view what I'm up to on other sites, such as <a href="https://github.com/Marek-Fewtrell">Github</a> and <a href="https://codepen.io/Marek-Fewtrell/">CodePen</a>, at the <a href="#bottomPage">bottom of the page</a>.
 							Want to work together? I'd love to hear from you. The quickest way to contact me is view the <a href="contactme.html">contact form</a> on this page or contact me via any other site I use. ( links at the bottom of the page )
 						</p>
-
-						<hr>
-
-						<div class="text-center">
-							<h3>List of skills here. Maybe</h3>
-						</div>
 					</div>
 				</div>
 
@@ -56,6 +59,13 @@
 					<div class="panel-body">
 						<h2 class="text-center">Portfolio</h2>
 						<p class="text-center">Here are a couple of my personal projects. To see more please visit my <a href="https://github.com/Marek-Fewtrell">Github</a> or <a href="https://codepen.io/Marek-Fewtrell/">CodePen</a>.</p>
+
+
+
+						<div class="grid-container">
+							<div class="header"
+						</div>
+
 
 						<ul>
 							<li>
@@ -76,24 +86,38 @@
 								</div>
 							</li>
 
+
 							<li>
 								<div class="thumbnail row">
-									<h3 class="text-center">Youtube Soundboard</h3>
+									<h3 class="text-center">Nightlife Coordination App</h3>
 									<div class="col-sm-4">
-										<img src="./Youtube SoundBoard.png" class="img-responsive">
+										<img src="./Nightlife Coordination.png" class="img-responsive">
 										<div class="caption">
-											<p>A soundboard of Youtube videos.</p>
+											<p>Find where people are going out to tongiht.</p>
 										</div>
 									</div>
 									<div class="col-sm-8 text-center">
-										<a href="https://github.com/Marek-Fewtrell/Youtube-Soundboard" target="_blank">View Project</a>
+										<a href="https://github.com/Marek-Fewtrell/Nightlife-Coord-FCCBackendProj" target="_blank">View Project</a>
 										<div>
-											A web application which uses Google API's and allows users to find and create lists of videoes to playback later.
+											A fullstack JS app that provides a list of bars in the area and allows people to indicate where they will be going to. Developed with NodeJS and VueJS
 										</div>
 									</div>
 								</div>
 							</li>
+							
 						</ul>
+
+						<div class="halfSpace">
+							<div class="thumbnail">
+								<a href="https://github.com/Marek-Fewtrell/Youtube-Soundboard" target="_blank">
+									<h3>Youtube Soundboard</h3>
+									<img src="./Youtube SoundBoard.png" class="img-responsive">
+									<div class="caption">
+										<p>A soundboard of Youtube videos.</p>
+									</div>
+								</a>
+							</div>
+						</div>
 
 						<div class="halfSpace">
 							<div class="thumbnail">
@@ -137,40 +161,41 @@
 			</div>
 		</div>
 
-	<footer id="bottomPage" class="text-center customBgColor2">
-		<div class="text-center bottomSpace">
-			<div class="mytooltip">
-				<a href="https://marekfewtrell.wordpress.com/" class="btn btn-default" target="_blank">
-					<i class="" alt="">My Blog!</i>
-				</a>
-				<span class="mytooltiptext">Wordpress Blog</span>
+		<footer id="bottomPage" class="text-center customBgColor2">
+			<div class="text-center bottomSpace">
+				<div class="mytooltip">
+					<a href="https://marekfewtrell.wordpress.com/" class="btn btn-default" target="_blank">
+						<i class="" alt="">My Blog!</i>
+					</a>
+					<span class="mytooltiptext">Wordpress Blog</span>
+				</div>
+				<div class="mytooltip">
+					<a href="https://github.com/Marek-Fewtrell" class="btn btn-default" target="_blank">
+						<i class="fa fa-github" alt=""></i>
+					</a>
+					<span class="mytooltiptext">Github</span>
+				</div>
+				<div class="mytooltip">
+					<a href="https://www.linkedin.com/in/marek-fewtrell-87ba0056/" class="btn btn-default" target="_blank">
+						<i class="fa fa-linkedin" alt=""></i>
+					</a>
+					<span class="mytooltiptext">LinkedIn</span>
+				</div>
+				<div class="mytooltip">
+					<a href="https://codepen.io/Marek-Fewtrell/" class="btn btn-default" target="_blank">
+						<i class="" alt="">CodePen</i>
+					</a>
+					<span class="mytooltiptext">CodePen</span>
+				</div>
+				<div class="mytooltip">
+					<a href="https://www.freecodecamp.org/marek-fewtrell" class="btn btn-default" target="_blank">
+						<i class="" alt="">FreeCodeCamp</i>
+					</a>
+					<span class="mytooltiptext">FreeCodeCamp</span>
+				</div>
 			</div>
-			<div class="mytooltip">
-				<a href="https://github.com/Marek-Fewtrell" class="btn btn-default" target="_blank">
-					<i class="fa fa-github" alt=""></i>
-				</a>
-				<span class="mytooltiptext">Github</span>
-			</div>
-			<div class="mytooltip">
-				<a href="https://www.linkedin.com/in/marek-fewtrell-87ba0056/" class="btn btn-default" target="_blank">
-					<i class="fa fa-linkedin" alt=""></i>
-				</a>
-				<span class="mytooltiptext">LinkedIn</span>
-			</div>
-			<div class="mytooltip">
-				<a href="https://codepen.io/Marek-Fewtrell/" class="btn btn-default" target="_blank">
-					<i class="" alt="">CodePen</i>
-				</a>
-				<span class="mytooltiptext">CodePen</span>
-			</div>
-			<div class="mytooltip">
-				<a href="https://www.freecodecamp.org/marek-fewtrell" class="btn btn-default" target="_blank">
-					<i class="" alt="">FreeCodeCamp</i>
-				</a>
-				<span class="mytooltiptext">FreeCodeCamp</span>
-			</div>
-		</div>
-		<span><i>Built and Designed by Marek Fewtrell</i></span>
-	</footer>
-</body>
+			<span><i>Built and Designed by Marek Fewtrell</i></span>
+		</footer>
+		<script src=""></script>
+	</body>
 </html>
