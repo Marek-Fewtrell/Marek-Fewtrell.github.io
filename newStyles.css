@@ -1,7 +1,5 @@
 
-
-
-.cssgrid-container {
+.portfolio-item-container {
   margin-bottom: 5px;
   border-bottom: 1px solid black;
   padding: 2px;
@@ -17,31 +15,26 @@
     /*"i i i d d d d d d l l l";*/
 }
 
-.cssgrid-img {
+.portfolio-item-img {
   grid-area: i;
 }
-.cssgrid-img > img {
+.portfolio-item-img > img {
   width: 100%;
   height: auto;
 }
 
-.cssgrid-details {
+.portfolio-item-details {
   grid-area: d;
 }
 
-.cssgrid-links {
+.portfolio-item-info {
   grid-area: l;
 }
-.cssgrid-links > a {
+.portfolio-item-info > a {
   display: block;
 }
 
-.cssgrid-tech {
-  grid-area: t;
-  /*border-top: 1px solid black;*/
-  padding: 10px;
-}
-.cssgrid-tech-item {
+.portfolio-item-tech-item {
   border: 1px solid black;
   border-radius: 5px;
   padding: 3px;
@@ -54,26 +47,18 @@
   color: orange;
 }
 
-.portfolioitem-status {
-  display: flex;
-  justify-content: center;
+.portfolio-item-info {
   margin-bottom: 10px;
-  /*border-bottom: 1px solid black;*/
-  padding: 5px;
-}
-.portfolioitem-status > i {
 
-}
-.portfolioitem-status-a {
-  display: flex;
-  align-items: flex-end;
-  font-weight: 600;
-}
-.portfolioitem-status-b {
+  padding: 5px;
   text-align: center;
-  width: 100px;
-  margin: auto;
-  flex-grow: 2;
+  width: 100%;
+}
+
+.portfolio-item-tech {
+  grid-area: t;
+  /*border-top: 1px solid black;*/
+  padding: 10px;
 }
 
 .button {
@@ -92,34 +77,10 @@
   border:none;
 }
 
-.cssgrid-links > a {
-  align-content: center;
-}
 .button > span {
   display: inline-flex;
 }
 .icon {
   font-size: 1.5em;
   margin-right: 2px;
-}
-
-
-
-
-
-.portolfio-nav {
-  display: flex;
-  justify-content: space-around;
-}
-
-.portolfio-nav > div {
-  flex: 1;
-  border: solid black 1px;
-  background-color: orange;
-  text-align: center;
-  padding: 10px;
-}
-
-.portolfio-nav div {
-
 }
