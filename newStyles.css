@@ -1,0 +1,125 @@
+
+
+
+.cssgrid-container {
+  margin-bottom: 5px;
+  border-bottom: 1px solid black;
+  padding: 2px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100px;
+  grid-gap: 5px;
+
+  grid-template-areas:
+    "i i i d d d d d d l l l"
+    "i i i d d d d d d l l l"
+    "i i i t t t t t t l l l";
+    /*"i i i d d d d d d l l l";*/
+}
+
+.cssgrid-img {
+  grid-area: i;
+}
+.cssgrid-img > img {
+  width: 100%;
+  height: auto;
+}
+
+.cssgrid-details {
+  grid-area: d;
+}
+
+.cssgrid-links {
+  grid-area: l;
+}
+.cssgrid-links > a {
+  display: block;
+}
+
+.cssgrid-tech {
+  grid-area: t;
+  /*border-top: 1px solid black;*/
+  padding: 10px;
+}
+.cssgrid-tech-item {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.info-complete {
+  color: green;
+}
+.info-progress {
+  color: orange;
+}
+
+.portfolioitem-status {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  /*border-bottom: 1px solid black;*/
+  padding: 5px;
+}
+.portfolioitem-status > i {
+
+}
+.portfolioitem-status-a {
+  display: flex;
+  align-items: flex-end;
+  font-weight: 600;
+}
+.portfolioitem-status-b {
+  text-align: center;
+  width: 100px;
+  margin: auto;
+  flex-grow: 2;
+}
+
+.button {
+  padding: 8px;
+  margin: 4px;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+.button:hover {
+  background-color: blue;
+  color:white;
+}
+
+.button:last-child {
+  border:none;
+}
+
+.cssgrid-links > a {
+  align-content: center;
+}
+.button > span {
+  display: inline-flex;
+}
+.icon {
+  font-size: 1.5em;
+  margin-right: 2px;
+}
+
+
+
+
+
+.portolfio-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.portolfio-nav > div {
+  flex: 1;
+  border: solid black 1px;
+  background-color: orange;
+  text-align: center;
+  padding: 10px;
+}
+
+.portolfio-nav div {
+
+}
