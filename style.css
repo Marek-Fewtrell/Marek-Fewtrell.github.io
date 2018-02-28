@@ -62,25 +62,8 @@ ul {
   padding: 0;
 }
 
-.halfSpace {
-  width: 49%;
-  float:left;
-}
-
 @media screen and (max-width: 992px) {
-  .halfSpace {
-    width: 100%;
 
-  }
-}
-
-.halfSpace .thumbnail {
-  margin-bottom: 0px;
-}
-
-.halfSpace .thumbnail a img {
-  max-width: 100%;
-  height: auto;
 }
 
 /* Tooltip container */
