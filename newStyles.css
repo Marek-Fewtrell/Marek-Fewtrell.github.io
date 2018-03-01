@@ -1,115 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+.mynavbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.mynavbar-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mynavbar-header {
+  display: inline-block;
+}
+.mynavbar-text {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.mynavbar-nav {
+  display: inline-block;
+}
+.mynavbar-nav > li {
+  display: inline;
+}
+.mynavbar-nav > li > a {
+  display: inline-block;
+  padding: 10px 15px;
+  color: white;
+}
+.mynavbar-nav > li > a:hover {
+  background-color: #eee;
+  text-decoration: none;
+  color: black;
+}
+
+/*.mynavbar-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.mynavbar-container > ul {
+  float: left;
+}
+.mynavbar-container > ul > li {
+  float: left;
+}*/
+
+/*.mynavbar-container::after {
+  clear: both;
+}
+
+.mynavbar-container::before {
+  display: table;
+  content: " ";
+}*/
+
+.quickportfolio-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 5px;
+}
 
 .portfolio-item-container {
   margin-bottom: 8px;
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid black;
+  border: 4px solid #46545f;
   padding: 2px;
   background-color: #fff;
 
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 100px;
   grid-gap: 5px;
 
   grid-template-areas:
-    "i i i d d d d d d l l l"
-    "i i i d d d d d d l l l"
-    "i i i t t t t t t l l l";
-    /*"i i i d d d d d d l l l";*/
-}
-
-.portfolio-item-img {
-  grid-area: i;
+    "i i i"
+    "i i i"
+    "d d d"
+    "d d d"
+    "t t t"
+    "l l l"
+    "l l l";
 }
 .portfolio-item-img > img {
-  width: 100%;
-  height: auto;
-}
-
-.portfolio-item-details {
-  grid-area: d;
-}
-
-.portfolio-item-info {
-  grid-area: l;
-}
-.portfolio-item-info > a {
-  display: block;
-}
-
-.portfolio-item-tech-item {
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 3px;
-}
-
-.info-complete {
-  color: green;
-}
-.info-progress {
-  color: orange;
-}
-
-.portfolio-item-info {
-  margin-bottom: 10px;
-
-  padding: 5px;
-  text-align: center;
-  width: 100%;
-}
-
-.portfolio-item-tech {
-  grid-area: t;
-  /*border-top: 1px solid black;*/
-  padding: 10px;
-}
-
-.button {
-  padding: 8px;
-  margin: 4px;
-  font-weight: 600;
-  text-align: center;
-}
-.button:hover {
-  /*background-color: #ccebf1;*/
-  /*color:white;*/
-  /*border: 1px solid black;*/
-}
-
-.button > span {
-  display: inline-flex;
-}
-.icon {
-  font-size: 1.5em;
-  margin-right: 2px;
-}
-
-
-.quickportfolio-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
-}
-.quickportfolio-item {
-  padding: 5px;
-  background-color: #fff;
-  border: 4px solid #46545f;
-  border-radius: 3px;
-}
-
-.quickportfolio-item > img {
-  display: block;
-  max-width: 100%;
-  /*height: auto;*/
   border: 2px solid #27131c;
-  border-radius: 5px;
+}
+@media screen and (min-width: 600px) {
+  .quickportfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio-item-container {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "i i d d d d"
+      "i i d d d d"
+      "l l l t t t"
+      "l l l t t t"
+  }
+
+  .mynavbar-container {
+    width: 500px;
+  }
 }
 
-.quickportfolio-item-links {
-  display: flex;
-  background-color: #000;
+@media screen and (min-width: 768px) {
+  .quickportfolio-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .portfolio-item-container {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+      "i i i d d d d d d l l l"
+      "i i i d d d d d d l l l"
+      "i i i t t t t t t l l l";
+      /*"i i i d d d d d d l l l";*/
+  }
+
+  .mynavbar-container {
+    width: 750px;
+  }
 }
-.quickportfolio-item-links > a {
-  flex: 1;
-  background-color: #fff;
-  margin: 0;
+
+@media screen and (min-width: 992px) {
+  .mynavbar-container {
+    width: 970px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mynavbar-container {
+    width: 1170px;
+  }
 }
